@@ -5,7 +5,7 @@ import time
 print("ru: Загрузка Браузера... ")
 print("en: Starting Browser... ")
 
-browser = webdriver.Firefox()
+browser = webdriver.Chrome()
 # For Chrome: browser = webdriver.Chrome()
 # For Safari: browser = webdriver.Safari()
 # For Firefox: browser = webdriver.Firefox()
@@ -15,8 +15,8 @@ browser.get("https://roblox.com/login")
 username = choto.find_element(By.ID, "login-username")
 password = choto.find_element(By.ID, "login-password")
 
-username.send_keys("") # Type Roblox Account Nickname here
-password.send_keys("") # Type Roblox Account Password here
+username.send_keys("L2JFK2NF3") # Type Roblox Account Nickname here
+password.send_keys("ardakugutr") # Type Roblox Account Password here
 
 voiti = choto.find_element(By.ID, "login-button")
 voiti.click()
